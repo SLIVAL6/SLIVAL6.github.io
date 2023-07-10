@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="websystems.css">
+    <title>Web Systems | Comments</title>
+</head>
+<body>
+    <header>
+        <h1 class="menu_h1">Web Systems<br>Assignment</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="past.html">Past</a></li>
+                <li>|</li>
+                <li><a href="future.html">Future</a></li>
+                <li>|</li>
+                <li><a class="active" href="comments.html">Comments</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <h2>Comments</h2>
+        <hr>
+        <h3>Overview</h3>
+        <p>
+            This website was designed to be technically sound, aesthetically pleasing, and 
+            to have great accessibility. These aspects are used together in order to make 
+            the website functional and easy to read.
+        </p>
+        <h3>Technical</h3>
+        <p>
+            The table below shows the file structure of all pages in this website.
+        </p>
+        <table id="comments_table">
+            <tr>
+                <th>Filename</th>
+                <th>Page Title</th>
+                <th>File Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>index.html</td>
+                <td>Web Systems | Home</td>
+                <td>HTML</td>
+                <td>The homepage which briefly describes the website and its author.</td>
+            </tr>
+            <tr>
+                <td>past.html</td>
+                <td>Web Systems | Past</td>
+                <td>HTML</td>
+                <td>Describes the past programming experiences of the website author.</td>
+            </tr>
+            <tr>
+                <td>future.html</td>
+                <td>Web Systems | Future</td>
+                <td>HTML</td>
+                <td>Describes the future ambitions of the website author.</td>
+            </tr>
+            <tr>
+                <td>comments.html</td>
+                <td>Web Systems | Comments</td>
+                <td>HTML</td>
+                <td>The page you're on right now. Details the design behind the website.</td>
+            </tr>
+            <tr>
+                <td>websystems.css</td>
+                <td>N/A</td>
+                <td>CSS</td>
+                <td>The stylesheet used to make the website aesthetically pleasing.</td>
+            </tr>
+        </table>
+        <p>
+            Each web page has a body, which can be further separated into a header and division.
+            The header for each page is the menu navigation bar, and is the same for each page in 
+            order to be consistent. Depending on what page is currently being displayed, the button 
+            with the name of the page in the navigation bar is highlighted in order to show that the 
+            user is on the page. 
+        </p>
+        <p>
+            The div for each page contains different HTML elements such as headers, paragraphs, tables, 
+            and more.
+        </p>
+        <ul>
+            <li>index.html - Headers, paragraphs, unordered list.</li>
+            <li>past.html - Table, span, grid of images.</li>
+            <li>future.html - Headers, paragraphs.</li>
+            <li>comments.html - Headers, paragraphs, table</li>
+        </ul>
+        <p>
+            The CSS file contains 7 classes and 2 id's which are used in the HTML pages. 5 classes are 
+            under a name called "menu", which are used to create the styling for the menu navigation 
+            bar at the top of each page. The menu class manages the positioning and padding of all 
+            elements within that navigation bar, and also changes the colour of buttons when the cursor 
+            is hovered over them, which creates instant feedback for the user. Another class is menu_h1,
+            which is used to override the settings for the h1 text in the navigation bar. While trying 
+            to implement this, I encountered difficulties in which writing ".menu h1" did not apply 
+            any changes to the h1 text in the navigation bar. Instead, I needed to create an entirely new 
+            class in order to do this, which I am still quite confused about. Nevertheless, it works at 
+            least. The final class I implemented in the CSS file is gallery, which is used to format 
+            the images into a grid in past.html.
+        </p>
+        <p>
+            In addition to those classes, I created an id called lightblue which is applied to the text 
+            in past.html to highlight that it is the name of a product that I have created. The id simply 
+            changes the colour of that text within the span. The other 2 id's I implemented were called 
+            comments_table, which simply overrides the size of the table and the size of the first column 
+            of the table, which was necessary as some text in the first column was clipping through into 
+            other columns.
+        </p>
+        <h3>Aesthetics</h3>
+        <p>
+            The aesthetics of the website have been designed to provide an easy-to-read experience for 
+            the user, whilst also creating a sense of formatting and structure through colour and font 
+            size. Below is a list of how this has been implemented.
+        </p>
+        <ul>
+            <li>
+                The colour scheme of the website is a gradient of blue, with mixes of dark and light hues 
+                in order to create a contrast which is easy on the eyes, and yet is consistent in colour 
+                throughout the website. The following colours are used: #ffffff, #0f4c75, #bbe1fa, #1b262c, 
+                #3282b8. 
+            </li>
+            <li>
+                Headings are ordered in font size through the CSS file, with h1 having the largest font size 
+                and h3 having the smallest font size out of the headings. This creates a sense of 
+                hierarchical order within the structure of text for each page, which leads to a better reading 
+                experience for the user.
+            </li>
+            <li>
+                The font used for the entire website is Helvetica, which is sans-serif. Sans-serif fonts are 
+                easier to read and thus make the website more readable for the user.
+            </li>
+            <li>
+                The menu navigation bar at the top of each page has rounded diagonals which give it a unique, 
+                intriguing look that grabs the user's attention. Furthermore, the buttons have this same shape 
+                for consistency.
+            </li>
+            <li>
+                The buttons in the menu navigation bar change to a lighter colour when the cursor is hovering 
+                over in order to show to the user that they can be interacted with. Furthermore, the button of 
+                the page that is currently being displayed is a different colour to show to the user that there 
+                is no need to click that button since they are already on that page.
+            </li>
+            <li>
+                Margins are applied to the entire website in order to reduce the amount of horizontal space 
+                needed to read the screen. This makes the website easier to read for the user, whilst also making 
+                the website more presentable.
+            </li>
+            <li>
+                Padding is used for all text, including paragraphs and text in tables in order to make it easier 
+                to read and aesthetically pleasing.
+            </li>
+        </ul>
+        <h3>Accessibility</h3>
+        <p>
+            Accessibility is an important part of web design and has been incorporated into the creation of this 
+            website. The website has been designed to be accessible as possible so that users with disabilities 
+            are not unable to read or navigate the website. Below is a list of how this has been implemented.
+        </p>
+        <ul>
+            <li>
+                All fonts adjust their size depending on the width and height of the browser. This is achieved 
+                through implementing relative font sizes in the CSS stylesheet, where font sizes use a percentage 
+                of the default font size instead of being hard coding the font size with a set amount of pixels 
+                that cannot adapt to the browser size.
+            </li>
+            <li>
+                The colour scheme of the website makes it so that the text is a white colour against a dark blue 
+                background, which creates a great contrast and makes the text easier to read and more accessible 
+                to those with visual impairments.
+            </li>
+            <li>
+                All images have alt text in order to assist those with visual disabilities. The alt text can be 
+                read aloud in order to provide a description of the image, which helps those who are unable to 
+                see the image itself to know what it is meant to look like. This also provides a benefit in case 
+                images do not load, as the alt text will be displayed instead.
+            </li>
+            <li>
+                Font sizes always adjust to the browser size and are therefore always at a suitable size that can 
+                comfortably be read by any user. This helps those with visual impairments to more easily read the 
+                text of the website.
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
