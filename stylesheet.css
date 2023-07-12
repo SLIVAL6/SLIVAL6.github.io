@@ -41,6 +41,31 @@
     font-style: normal;
 }
 
+::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#3383e6, #bbe1fa);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3383e6;
+}
+
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: #3383e6 transparent;
+        scrollbar-width: thin;
+    }
+}
+
 body {
     background-image: url("./images/circuit.png");
     background-color: #fafafa;
@@ -82,16 +107,46 @@ hr {
 
 header {
     background-color: #3383e6;
-    background-image: url('header_day.jpg');
+    background-image: url('./images/header_day.jpg');
     justify-content: flex-end;
     display: flex;
     align-items: end;
     padding: 0px 1%;
-    padding-top: 100px;
+    padding-top: 9em;
+}
+
+.day header {
+    background-image: url('./images/header_day.jpg');
+}
+
+.sunset header {
+    background-image: url('./images/header_sunset.jpg');
+}
+
+.sunset .menu a.active {
+    background-color: #e9a29f;
+    color: #000000;
+}
+
+.night header {
+    background-image: url('./images/header_night.jpg');
+}
+
+.night .menu a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.night .menu a.active {
+    background-color: #e7c2f1;
+    color: #000000;
+}
+
+.night h1 {
+    color: #ffffff;
 }
 
 table {
-    background-color: #616161;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
