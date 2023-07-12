@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'silkscreen';
+    src:
+        local("silkscreen"),
+        url('./fonts/silkscreen/slkscr-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'silkscreen';
+    src:
+        local("silkscreen"),
+        url('./fonts/silkscreen/slkscrb-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'silkscreen';
+    src:
+        local("silkscreen"),
+        url('./fonts/silkscreen/slkscre-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'silkscreen';
+    src:
+        local("silkscreen"),
+        url('./fonts/silkscreen/slkscreb-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'eurostile';
+    src: url('./fonts/eurostile/eurostile.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url("./images/circuit.png");
+    background-color: #fafafa;
+    font-family: "eurostile";
+    color: #000000;
+    margin: 0px 0px;
+}
+
+h1 {
+    font-size: 400%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 250%;
+    font-weight: bold;
+    padding: 0px 1%;
+}
+
+h3 {
+    font-size: 200%;
+    font-weight: bold;
+    padding: 0px 1%;
+}
+
+p {
+    font-size: 120%;
+    align-content: center;
+    padding: 0px 1%;
+}
+
+li {
+    font-size: 120%;
+}
+
+hr {
+    margin: 0px 1%;
+}
+
+header {
+    background-color: #3383e6;
+    background-image: url('header_day.jpg');
+    justify-content: flex-end;
+    display: flex;
+    align-items: end;
+    padding: 0px 1%;
+    padding-top: 100px;
+}
+
+table {
+    background-color: #616161;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: 120%;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table, td {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#lightblue {
+    color: #bbe1fa;
+}
+
+#comments_table {
+    width: 80%;
+}
+
+#comments_table td:first-child{
+    width: 20%;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu_h1 {
+    margin-right: auto;
+    margin-bottom: 0%;
+}
+
+.menu li {
+    display: inline-block;
+    padding-top: 10%;
+    padding-bottom: 1%;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.menu a {
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu a:hover {
+    background-color: #000000;
+    border-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.menu a.active {
+    background-color: #bbe1fa;
+    color: #000000;
+    border-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
