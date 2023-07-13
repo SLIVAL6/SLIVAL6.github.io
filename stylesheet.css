@@ -99,12 +99,16 @@ p {
     align-content: center;
 }
 
-div {
-    padding: 0px 20%;
+.main {
+    margin: 0px 20%;
 }
 
 li {
     font-size: 140%;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -191,6 +195,26 @@ img {
     height: auto;
 }
 
+.back {
+    font-weight: bold;
+    font-size: 140%;
+    padding-top: 6%;
+    padding-bottom: 1%;
+}
+
+.back a {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.2);
+    padding: 1% 1%;
+}
+
+.back a:hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
 .menu {
     list-style: none;
 }
@@ -231,9 +255,12 @@ img {
 }
 
 .gallery {
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 1%;
+    padding-bottom: 1%;
 }
 
 * {
@@ -241,7 +268,8 @@ img {
 }
 
 .timeline {
-    width: 100%;
+    margin: auto;
+    width: 70%;
     height: auto;
     padding: 0% 0%;
     display: grid;
