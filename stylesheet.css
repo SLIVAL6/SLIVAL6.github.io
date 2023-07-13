@@ -107,10 +107,6 @@ li {
     font-size: 140%;
 }
 
-a {
-    text-decoration: none;
-}
-
 header {
     background-color: #3383e6;
     background-image: url('./images/header_day.jpg');
@@ -193,6 +189,29 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+iframe {
+    margin: auto;
+}
+
+.badge_gallery {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1em;
+    padding-bottom: 1%;
+}
+
+.badge_gallery img {
+    height: 2em;
+    width: auto;
+    box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.2);
+}
+
+.badge_gallery a img:hover {
+    box-shadow: 4px 4px 25px rgba(51, 132, 230, 0.7);
 }
 
 .back {
