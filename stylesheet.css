@@ -166,6 +166,14 @@ header {
     background: #0f0a16;
 }
 
+.night .badge_gallery a img:hover {
+    box-shadow: 4px 4px 25px rgba(106, 6, 236, 0.5);
+}
+
+.night .badge_gallery_2 a img:hover {
+    box-shadow: 4px 4px 25px rgba(106, 6, 236, 0.5);
+}
+
 table {
     background-color:rgba(0, 0, 0, 0.1);
     border-spacing: 0;
@@ -230,6 +238,10 @@ iframe {
     box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.2);
 }
 
+.badge_gallery a img:hover {
+    box-shadow: 4px 4px 25px rgba(51, 132, 230, 0.7);
+}
+
 .projects_badge_gallery {
     width: 100%;
     height: auto;
@@ -245,7 +257,21 @@ iframe {
     box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.2);
 }
 
-.badge_gallery a img:hover {
+.badge_gallery_2 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1em;
+}
+
+.badge_gallery_2 img {
+    height: 2em;
+    width: auto;
+    box-shadow: 4px 4px 25px rgba(51, 51, 51, 0.2);
+}
+
+.badge_gallery_2 a img:hover {
     box-shadow: 4px 4px 25px rgba(51, 132, 230, 0.7);
 }
 
