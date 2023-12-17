@@ -94,6 +94,11 @@ h4 {
     font-weight: bold;
 }
 
+h5 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
 p {
     font-size: 140%;
     align-content: center;
@@ -429,7 +434,7 @@ iframe {
 .timeline ul li .date {
     position: absolute;
     top: -45px;
-    width: 135px;
+    width: 200px;
     height: 35px;
     border-radius: 20px;
     color: #000000;
