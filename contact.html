@@ -1,60 +1,88 @@
 <!DOCTYPE html>
-<html lang="en" class="day">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="./images/favicon_day.png">
-    <title>Samuel Coa | Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SLIVAL | Contact</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-    <header>
-        <h1 class="menu_h1">SAMUEL COA</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">HOME</a></li>
-                <li>|</li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li>|</li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li>|</li>
-                <li><a class="active" href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="main">
-        <h2>CONTACT</h2>
-        <hr>
-        <h3>Links</h3>
-        <div class="badge_gallery">
-            <a href="https://www.linkedin.com/in/samuel-coa/" rel="noopener noreferrer" target="_blank">
-                <img src="https://img.shields.io/badge/LinkedIn-white?logo=linkedin&logoColor=%230A66C2&labelColor=black" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/SLIVAL6" rel="noopener noreferrer" target="_blank">
-                <img src="https://img.shields.io/badge/GitHub-white?logo=github&labelColor=black" alt="GitHub">
-            </a>
-            <a href="https://slival.itch.io/" rel="noopener noreferrer" target="_blank">
-                <img src="https://img.shields.io/badge/itch.io-white?logo=itchdotio&logoColor=%23FA5C5C&labelColor=black" alt="itch.io">
-            </a>
-            <a href="https://twitter.com/SLIVAL6" rel="noopener noreferrer" target="_blank">
-                <img src="https://img.shields.io/badge/Twitter-white?logo=twitter&logoColor=%231D9BF0&labelColor=black" alt="Twitter">
-            </a>
-            <a href="https://www.youtube.com/channel/UCmZzZalsu0v7wQ_pqAuTvXA" rel="noopener noreferrer" target="_blank">
-                <img src="https://img.shields.io/badge/YouTube-white?logo=youtube&logoColor=%23FF0000&labelColor=black" alt="YouTube">
-            </a>
-            <a href="https://myanimelist.net/profile/Slival6" rel="noopener noreferrer" target="_blank">
-                <img src="https://img.shields.io/badge/MyAnimeList-white?logo=myanimelist&logoColor=%232E51A2&labelColor=black" alt="MyAnimeList">
-            </a>
-            <a href="https://na.finalfantasyxiv.com/lodestone/character/41786470/" rel="noopener noreferrer" target="_blank">
-                <img src="https://img.shields.io/badge/FFXIV-white?logo=squareenix&logoColor=%23ED1C24&labelColor=black" alt="FFXIV">
-            </a>
-            <a href="https://spinsha.re/user/117" rel="noopener noreferrer" target="_blank">
-                <img src="https://img.shields.io/badge/SpinShare-white?logo=osu&logoColor=%23FF66AA&labelColor=black" alt="SpinShare">
-            </a>
-        </div>
-        <p>Add me on Discord at slival6</p>
+  <div class="main-container">
+    <div class="top-bar-container">
+      <header class="hero-header">
+        <h2 class="intro-text">want to</h2>
+        <h1 class="main-name">CONTACT</h1>
+        <h2 class="aka-text">me?</h2>
+      </header>
+      <div class="header-extension"></div>
     </div>
+
+    <div class="content-box">
+        <div class="about-scrollable">
+            <div class="contact-content">
+                <div class="about-intro-text">
+                    <h3>the best way to contact me is via email or discord. click below to copy stuff to your clipboard!</h3>
+                    <br>
+
+                    <div class="contact-info">
+                        <div class="contact-item" onclick="copyToClipboard('email', event)">
+                            <span class="contact-label">personal:</span>
+                            <span class="value" id="email">samuel.coa48@gmail.com</span>
+                            <i class="fas fa-copy copy-icon"></i>
+                        </div>
+                        <br>
+
+                        <div class="contact-item" onclick="copyToClipboard('partybomb', event)">
+                            <span class="contact-label">partybomb:</span>
+                            <span class="value" id="partybomb">partybombstudio@outlook.com</span>
+                            <i class="fas fa-copy copy-icon"></i>
+                        </div>
+                        <br>
+                    
+                        <div class="contact-item" onclick="copyToClipboard('discord', event)">
+                            <span class="contact-label">discord:</span>
+                            <span class="value" id="discord">slival6</span>
+                            <i class="fas fa-copy copy-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/contact.png" alt="Profile picture" class="contact-image"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bar">
+        <div class="back-button-container">
+          <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> back
+          </a>
+        </div>
+    
+        <div class="social-bar">
+          <div class="social-wrapper">
+            <a href="https://github.com/SLIVAL6" target="_blank" class="social-btn">
+              <i class="fab fa-github"></i>
+            </a>
+            <div class="tooltip-text">GitHub</div>
+          </div>
+      
+          <div class="social-wrapper">
+            <a href="https://www.linkedin.com/in/samuel-coa/" target="_blank" class="social-btn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <div class="tooltip-text">LinkedIn</div>
+          </div>
+      
+          <div class="social-wrapper">
+            <a href="https://x.com/SLIVAL6" target="_blank" class="social-btn">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <div class="tooltip-text">Twitter / X</div>
+          </div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>

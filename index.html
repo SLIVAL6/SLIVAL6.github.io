@@ -1,48 +1,148 @@
 <!DOCTYPE html>
-<html lang="en" class="day">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="./images/favicon_day.png">
-    <title>Samuel Coa | Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SLIVAL | Home</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-    <header>
-        <h1 class="menu_h1">SAMUEL COA</h1>
-        <nav>
-            <ul class="menu">
-                <li><a class="active" href="index.html">HOME</a></li>
-                <li>|</li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li>|</li>
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li>|</li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="main">
-        <h2>HOME</h2>
-        <hr>
-        <h3>Introduction</h3>
-        <p>
-            Salutations. My name is Samuel (also known as SLIVAL online), and you're currently on my website.
-        </p>
-        <p>
-            I'm a university student based in Australia studying software engineering and game development. This 
-            website aims to give a bit of insight into myself, whilst also showcasing the skills I've accrued and 
-            projects I've worked on over the past few years and the years to come. It details my personal experiences 
-            with programming and my ambitions for the future.
-        </p>
-        <p>
-            Most importantly, this website shows my growth over time as a software and game developer.
-        </p>
-        <p>
-            Please note that this site is constantly being updated.
-        </p>
+  <div class="main-container">
+    <div class="top-bar-container">
+      <header class="hero-header">
+        <h2 class="intro-text">hey, i'm</h2>
+        <h1 class="main-name">SLIVAL</h1>
+        <h2 class="aka-text">aka sam</h2>
+      </header>
+      <div class="header-extension"></div>
     </div>
+
+    <div class="content-box">
+      <nav class="button-group">
+        <a href="about.html" class="nav-link">
+          <button>
+            <div class="button-content">
+              <i class="fas fa-info-circle"></i> about
+            </div>
+          </button>
+        </a>
+        <a href="portfolio.html" class="nav-link">
+          <button>
+            <div class="button-content">
+              <i class="fas fa-folder"></i> portfolio
+            </div>
+          </button>
+        </a>
+        <a href="blog.html" class="nav-link">
+          <button>
+            <div class="button-content">
+              <i class="fas fa-pen"></i> blog
+            </div>
+          </button>
+        </a>
+        <a href="trophies.html" class="nav-link">
+          <button>
+            <div class="button-content">
+              <i class="fas fa-trophy"></i> awards
+            </div>
+          </button>
+        </a>
+        <a href="links.html" class="nav-link">
+          <button>
+            <div class="button-content">
+              <i class="fas fa-link"></i> links
+            </div>
+          </button>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <button>
+            <div class="button-content">
+              <i class="fas fa-envelope"></i> contact
+            </div>
+          </button>
+        </a>
+      </nav>
+
+      <section class="carousel-section">
+        <div class="carousel">
+          <div class="carousel-track">
+            <div class="carousel-item" onclick="alert('Clicked Card 1')">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/thumbnail_mmmmmm.png" alt="Project Image" />
+                </div>
+                <h2>MMMMMM: Multi-Merge Mix & Match Minigame Mayhem</h2>
+                <p>Local and Online Multiplayer Party Game for up to 8 Players.</p>
+                <br>
+                <p>Wishlist now on Steam!</p>
+              </div>
+            </div>
+            <div class="carousel-item" onclick="alert('Clicked Card 2')">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/thumbnail_pascal.png" alt="Project Image" />
+                </div>
+                <h2>Pascal's Requiem</h2>
+                <p>2.5D Turn-based RPG set in a solarpunk world, where every player and enemy attack is a minigame.</p>
+                <br>
+                <p>Wishlist now on Steam!</p>
+              </div>
+            </div>
+            <div class="carousel-item" onclick="alert('Clicked Card 3')">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/thumbnail_samurai.png" alt="Project Image" />
+                </div>
+                <h2>Armless Samurai</h2>
+                <p>Fast-paced, high-intensity, first-person speedrunning game!</p>
+                <br>
+                <p>Play now for free on Steam!</p>
+              </div>
+            </div>
+            <div class="carousel-item" onclick="alert('Clicked Card 3')">
+              <div class="card">
+                <div class="image-container">
+                  <img src="./images/thumbnail_echorush.png" alt="Project Image" />
+                </div>
+                <h2>EchoRush</h2>
+                <p>2D platformer where echolocation is key!</p>
+                <br>
+                <p>Play now for free on itch!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button id="prev">&#8592;</button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button id="next">&#8594;</button>
+        </div>
+      </section>
+    </div>
+    <div class="social-bar">
+      <div class="social-wrapper">
+        <a href="https://github.com/SLIVAL6" target="_blank" class="social-btn">
+          <i class="fab fa-github"></i>
+        </a>
+        <div class="tooltip-text">GitHub</div>
+      </div>
+    
+      <div class="social-wrapper">
+        <a href="https://www.linkedin.com/in/samuel-coa/" target="_blank" class="social-btn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <div class="tooltip-text">LinkedIn</div>
+      </div>
+    
+      <div class="social-wrapper">
+        <a href="https://x.com/SLIVAL6" target="_blank" class="social-btn">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <div class="tooltip-text">Twitter / X</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
